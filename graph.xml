@@ -18,7 +18,6 @@
             <sourceProduct refid="Apply-Orbit-File" />
         </sources>
     </node>
-    <!-- Assuming there's an operator for Border Noise Removal, otherwise this needs custom implementation -->
     <node id="BorderNoiseRemoval">
         <operator>Remove-GRD-Border-Noise</operator>
         <sources>
@@ -71,7 +70,7 @@
             <sourceProduct refid="LinearToFromdB" />
         </sources>
         <parameters>
-            <geoRegion>POLYGON((79.75601097331094 7.968471373029459, 79.75601097331094 7.740986881521081, 79.93412281322321 7.740986881521081, 79.93412281322321 7.968471373029459, 79.75601097331094 7.968471373029459))</geoRegion>
+            <geoRegion>${subsetRegion}</geoRegion>
         </parameters>
     </node>
     <node id="Write">
