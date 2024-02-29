@@ -1,6 +1,5 @@
 import subprocess
 import sys
-import os
 from osgeo import ogr
 
 def shapefile_to_wkt(shapefile_path):
