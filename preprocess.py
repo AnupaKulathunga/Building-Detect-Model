@@ -11,8 +11,8 @@ def shapefile_to_wkt(shapefile_path):
     return geom.ExportToWkt()
 
 def execute_gpt(input_file, output_name, output_format, wkt):
-    graph_file = 'graph.xml'
-    gpt_path = '/home/anupa/snap-esa/bin/gpt'  # Update with the correct path to your gpt executable
+    graph_file = 'preprocess.xml'
+    gpt_path = '/home/anupa/snap-esa/bin/gpt'
     cmd = [
         gpt_path,
         graph_file,
